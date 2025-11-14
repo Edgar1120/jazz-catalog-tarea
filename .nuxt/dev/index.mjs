@@ -3,64 +3,64 @@ import { Server } from 'node:http';
 import { resolve, dirname, join } from 'node:path';
 import nodeCrypto from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, getResponseStatus, createError, removeResponseHeader, getQuery as getQuery$1, readBody, getCookie, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, getResponseStatusText } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/h3/dist/index.mjs';
-import { escapeHtml } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/@vue/shared/dist/shared.cjs.js';
-import _RemarkEmoji from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/remark-emoji/index.js';
-import { visit } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/unist-util-visit/index.js';
-import { toString } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/hast-util-to-string/index.js';
-import { createStorage, prefixStorage } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/unstorage/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, joinRelativeURL, decodePath, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/ufo/dist/index.mjs';
-import { hash as hash$1 } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/ohash/dist/index.mjs';
-import defu, { defuFn, defu as defu$1 } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/defu/dist/defu.mjs';
-import { dirname as dirname$1, resolve as resolve$1, extname } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/pathe/dist/index.mjs';
-import { snakeCase, kebabCase, pascalCase, camelCase } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/scule/dist/index.mjs';
-import { unified } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/unified/index.js';
-import { toString as toString$1 } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/mdast-util-to-string/index.js';
-import { postprocess, preprocess } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/micromark/dev/index.js';
-import { stringifyPosition } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/unist-util-stringify-position/index.js';
-import { markdownLineEnding, markdownSpace } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/micromark-util-character/dev/index.js';
-import { push, splice } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/micromark-util-chunked/dev/index.js';
-import { resolveAll } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/micromark-util-resolve-all/index.js';
-import { normalizeUri } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/micromark-util-sanitize-uri/dev/index.js';
-import remarkParse from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/remark-parse/index.js';
-import remark2rehype from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/remark-rehype/index.js';
-import remarkMDC, { parseFrontMatter } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/remark-mdc/dist/index.mjs';
-import remarkGFM from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/remark-gfm/index.js';
-import rehypeExternalLinks from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/rehype-external-links/index.js';
-import rehypeSortAttributeValues from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/rehype-sort-attribute-values/index.js';
-import rehypeSortAttributes from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/rehype-sort-attributes/index.js';
-import rehypeRaw from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/rehype-raw/index.js';
-import { detab } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/detab/index.js';
-import Slugger from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/github-slugger/index.js';
-import destr, { destr as destr$1 } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/destr/dist/index.mjs';
-import { createWasmOnigEngine } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/engine-oniguruma.mjs';
-import slugify from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/slugify/slugify.js';
-import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { renderToString } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/vue/server-renderer/index.mjs';
-import { klona } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/klona/dist/index.mjs';
-import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/nuxt/node_modules/unhead/dist/server.mjs';
-import { stringify, uneval } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/devalue/index.js';
-import { isVNode, toValue, isRef } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/vue/index.mjs';
-import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/nuxt/node_modules/unhead/dist/plugins.mjs';
-import { createHooks } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/hookable/dist/index.mjs';
-import { createFetch, Headers as Headers$1 } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/ofetch/dist/node.mjs';
-import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/node-mock-http/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/unstorage/drivers/fs.mjs';
-import { digest } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/nitropack/node_modules/ohash/dist/index.mjs';
-import { toRouteMatcher, createRouter } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/radix3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, getResponseStatus, createError, removeResponseHeader, getQuery as getQuery$1, readBody, getCookie, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, getResponseStatusText } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/h3/dist/index.mjs';
+import { escapeHtml } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/@vue/shared/dist/shared.cjs.js';
+import _RemarkEmoji from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/remark-emoji/index.js';
+import { visit } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/unist-util-visit/index.js';
+import { toString } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/hast-util-to-string/index.js';
+import { createStorage, prefixStorage } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/unstorage/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, joinRelativeURL, decodePath, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/ufo/dist/index.mjs';
+import { hash as hash$1 } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/ohash/dist/index.mjs';
+import defu, { defuFn, defu as defu$1 } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/defu/dist/defu.mjs';
+import { dirname as dirname$1, resolve as resolve$1, extname } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/pathe/dist/index.mjs';
+import { snakeCase, kebabCase, pascalCase, camelCase } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/scule/dist/index.mjs';
+import { unified } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/unified/index.js';
+import { toString as toString$1 } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/mdast-util-to-string/index.js';
+import { postprocess, preprocess } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/micromark/dev/index.js';
+import { stringifyPosition } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/unist-util-stringify-position/index.js';
+import { markdownLineEnding, markdownSpace } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/micromark-util-character/dev/index.js';
+import { push, splice } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/micromark-util-chunked/dev/index.js';
+import { resolveAll } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/micromark-util-resolve-all/index.js';
+import { normalizeUri } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/micromark-util-sanitize-uri/dev/index.js';
+import remarkParse from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/remark-parse/index.js';
+import remark2rehype from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/remark-rehype/index.js';
+import remarkMDC, { parseFrontMatter } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/remark-mdc/dist/index.mjs';
+import remarkGFM from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/remark-gfm/index.js';
+import rehypeExternalLinks from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/rehype-external-links/index.js';
+import rehypeSortAttributeValues from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/rehype-sort-attribute-values/index.js';
+import rehypeSortAttributes from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/rehype-sort-attributes/index.js';
+import rehypeRaw from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/rehype-raw/index.js';
+import { detab } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/detab/index.js';
+import Slugger from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/github-slugger/index.js';
+import destr, { destr as destr$1 } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/destr/dist/index.mjs';
+import { createWasmOnigEngine } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/engine-oniguruma.mjs';
+import slugify from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/slugify/slugify.js';
+import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { renderToString } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/vue/server-renderer/index.mjs';
+import { klona } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/klona/dist/index.mjs';
+import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/nuxt/node_modules/unhead/dist/server.mjs';
+import { stringify, uneval } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/devalue/index.js';
+import { isVNode, toValue, isRef } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/vue/index.mjs';
+import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/nuxt/node_modules/unhead/dist/plugins.mjs';
+import { createHooks } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/hookable/dist/index.mjs';
+import { createFetch, Headers as Headers$1 } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/ofetch/dist/node.mjs';
+import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/node-mock-http/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/unstorage/drivers/fs.mjs';
+import { digest } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/nitropack/node_modules/ohash/dist/index.mjs';
+import { toRouteMatcher, createRouter } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/radix3/dist/index.mjs';
 import { readFile } from 'node:fs/promises';
-import consola, { consola as consola$1 } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/consola/dist/index.mjs';
-import { ErrorParser } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/youch-core/build/index.js';
-import { Youch } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/youch/build/index.js';
-import { SourceMapConsumer } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/source-map/source-map.js';
+import consola, { consola as consola$1 } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/consola/dist/index.mjs';
+import { ErrorParser } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/youch-core/build/index.js';
+import { Youch } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/youch/build/index.js';
+import { SourceMapConsumer } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/source-map/source-map.js';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { getContext } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/errx/dist/index.js';
+import { getContext } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/unctx/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/errx/dist/index.js';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { walkResolver } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/nuxt/node_modules/unhead/dist/utils.mjs';
+import { walkResolver } from 'file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/nuxt/node_modules/unhead/dist/utils.mjs';
 
-const serverAssets = [{"baseName":"server","dir":"C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/server/assets"}];
 
 const assets$1 = createStorage();
 
@@ -72,13 +72,13 @@ const storage$1 = createStorage({});
 
 storage$1.mount('/assets', assets$1);
 
-storage$1.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main","watchOptions":{"ignored":[null]}}));
-storage$1.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/server","watchOptions":{"ignored":[null]}}));
-storage$1.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/content"}));
-storage$1.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/.nuxt/content-cache"}));
-storage$1.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/.nuxt"}));
-storage$1.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/.nuxt/cache"}));
-storage$1.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/.data/kv"}));
+storage$1.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea","watchOptions":{"ignored":[null]}}));
+storage$1.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/server","watchOptions":{"ignored":[null]}}));
+storage$1.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/content"}));
+storage$1.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/.nuxt/content-cache"}));
+storage$1.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/.nuxt"}));
+storage$1.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/.nuxt/cache"}));
+storage$1.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/.data/kv"}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage$1, base) : storage$1;
@@ -1253,13 +1253,13 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _meYsdOMxpgqYsqJLu2zsWbdTOHOjvFgEhc6w4hGiHA = (function(nitro) {
+const _OKRJAdQ4KvpabWj6VdOcHlJk1VreQbFymhsfRLaZDw = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
-const rootDir = "C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main";
+const rootDir = "C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea";
 
 const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"}],"link":[],"style":[],"script":[],"noscript":[],"title":"Catálogo de jazz"};
 
@@ -1278,7 +1278,7 @@ const devReducers = {
   URL: (data) => data instanceof URL ? data.toString() : void 0
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _p3UBLJJxBPmwq1dx2TyVou5qbnZi_rxbF5Hv9nSw = (nitroApp) => {
+const _i7Xll8XU1eePfS5vdlEDDFZcZur4ye7oq2yZTnRNQ1Y = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -2182,7 +2182,7 @@ function contentHeading(body) {
   };
 }
 
-const _dIeg0glhpQavH9AGJbENjDXeeVljB6SBWKbz4Awuk = defineNitroPlugin(async (nitro) => {
+const _j2vJyzwBQFhp6KrvPPApsrMWsJV29RsbeSWG_pjVjwI = defineNitroPlugin(async (nitro) => {
   const { cleanCachedContents } = await Promise.resolve().then(function () { return storage; });
   const storage$1 = useStorage();
   const unwatch = await storage$1.watch(async (event, key) => {
@@ -2198,9 +2198,9 @@ const _dIeg0glhpQavH9AGJbENjDXeeVljB6SBWKbz4Awuk = defineNitroPlugin(async (nitr
 });
 
 const plugins = [
-  _meYsdOMxpgqYsqJLu2zsWbdTOHOjvFgEhc6w4hGiHA,
-_p3UBLJJxBPmwq1dx2TyVou5qbnZi_rxbF5Hv9nSw,
-_dIeg0glhpQavH9AGJbENjDXeeVljB6SBWKbz4Awuk
+  _OKRJAdQ4KvpabWj6VdOcHlJk1VreQbFymhsfRLaZDw,
+_i7Xll8XU1eePfS5vdlEDDFZcZur4ye7oq2yZTnRNQ1Y,
+_j2vJyzwBQFhp6KrvPPApsrMWsJV29RsbeSWG_pjVjwI
 ];
 
 const assets = {};
@@ -2228,7 +2228,7 @@ function getAsset (id) {
 
 const METHODS = /* @__PURE__ */ new Set(["HEAD", "GET"]);
 const EncodingMap = { gzip: ".gz", br: ".br" };
-const _s1_6NF = eventHandler((event) => {
+const _j4JwPk = eventHandler((event) => {
   if (event.method && !METHODS.has(event.method)) {
     return;
   }
@@ -2292,7 +2292,7 @@ const _s1_6NF = eventHandler((event) => {
   return readAsset(id);
 });
 
-const _xbiSzl = eventHandler(async (event) => {
+const _8NEk5v = eventHandler(async (event) => {
   const { code, lang, theme: themeString, options: optionsStr } = getQuery$1(event);
   const theme = JSON.parse(themeString);
   const options = optionsStr ? JSON.parse(optionsStr) : {};
@@ -2359,8 +2359,8 @@ function setSSRError(ssrContext, error) {
 
 const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
 const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;
-const getServerEntry = () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/.nuxt//dist/server/server.mjs').then((r) => r.default || r);
-const getClientManifest = () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/.nuxt//dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {
@@ -2606,7 +2606,7 @@ async function getIslandContext(event) {
   return ctx;
 }
 
-const _ZHF2Bw = defineEventHandler(async (event) => {
+const _N8Eb4T = defineEventHandler(async (event) => {
   const { getContentQuery } = await Promise.resolve().then(function () { return query; });
   const { serverQueryContent } = await Promise.resolve().then(function () { return storage; });
   const query$1 = getContentQuery(event);
@@ -2637,7 +2637,7 @@ const _ZHF2Bw = defineEventHandler(async (event) => {
   return serverQueryContent(event, query$1).find();
 });
 
-const _26hQKK = defineEventHandler(async (event) => {
+const _UJOEkS = defineEventHandler(async (event) => {
   const { getContentIndex } = await Promise.resolve().then(function () { return contentIndex; });
   const { cacheStorage, serverQueryContent } = await Promise.resolve().then(function () { return storage; });
   const { content } = useRuntimeConfig();
@@ -2663,7 +2663,7 @@ const getPreview = (event) => {
   return { key };
 };
 
-const _BAWSbD = defineEventHandler(async (event) => {
+const _YjbKU4 = defineEventHandler(async (event) => {
   const { getContentQuery } = await Promise.resolve().then(function () { return query; });
   const { cacheStorage, serverQueryContent } = await Promise.resolve().then(function () { return storage; });
   const { createNav } = await Promise.resolve().then(function () { return navigation; });
@@ -2704,21 +2704,21 @@ const _BAWSbD = defineEventHandler(async (event) => {
   return createNav(contents?.result || contents, configs);
 });
 
-const _lazy_ZAtjJh = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_oQS6iA = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '', handler: _s1_6NF, lazy: false, middleware: true, method: undefined },
-  { route: '/__nuxt_error', handler: _lazy_ZAtjJh, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_mdc/highlight', handler: _xbiSzl, lazy: false, middleware: false, method: undefined },
+  { route: '', handler: _j4JwPk, lazy: false, middleware: true, method: undefined },
+  { route: '/__nuxt_error', handler: _lazy_oQS6iA, lazy: true, middleware: false, method: undefined },
+  { route: '/api/_mdc/highlight', handler: _8NEk5v, lazy: false, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: _SxA8c9, lazy: false, middleware: false, method: undefined },
-  { route: '/api/_content/query/:qid/**:params', handler: _ZHF2Bw, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query/:qid', handler: _ZHF2Bw, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query', handler: _ZHF2Bw, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.json', handler: _26hQKK, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid/**:params', handler: _BAWSbD, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid', handler: _BAWSbD, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation', handler: _BAWSbD, lazy: false, middleware: false, method: "get" },
-  { route: '/**', handler: _lazy_ZAtjJh, lazy: true, middleware: false, method: undefined }
+  { route: '/api/_content/query/:qid/**:params', handler: _N8Eb4T, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query/:qid', handler: _N8Eb4T, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query', handler: _N8Eb4T, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.json', handler: _UJOEkS, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid/**:params', handler: _YjbKU4, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid', handler: _YjbKU4, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation', handler: _YjbKU4, lazy: false, middleware: false, method: "get" },
+  { route: '/**', handler: _lazy_oQS6iA, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -4059,7 +4059,7 @@ const json = defineTransformer({
     let parsed;
     if (typeof content === "string") {
       if (_id.endsWith("json5")) {
-        parsed = (await import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
+        parsed = (await import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
       } else if (_id.endsWith("json")) {
         parsed = destr$1(content);
       }
@@ -4639,8 +4639,8 @@ function createShikiHighlighter({
   let shiki;
   let configs;
   async function _getShiki() {
-    const { createHighlighterCore, addClassToHast, isSpecialLang, isSpecialTheme } = await import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/core.mjs');
-    const { transformerNotationDiff, transformerNotationErrorLevel, transformerNotationFocus, transformerNotationHighlight } = await import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/@shikijs/transformers/dist/index.mjs');
+    const { createHighlighterCore, addClassToHast, isSpecialLang, isSpecialTheme } = await import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/core.mjs');
+    const { transformerNotationDiff, transformerNotationErrorLevel, transformerNotationFocus, transformerNotationHighlight } = await import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/@shikijs/transformers/dist/index.mjs');
     const shiki2 = await createHighlighterCore({
       langs,
       themes,
@@ -4805,32 +4805,32 @@ function createShikiHighlighter({
 }
 
 const bundledLangs = {
-"javascript": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/javascript.mjs'),
-"js": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/javascript.mjs'),
-"jsx": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/jsx.mjs'),
-"json": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/json.mjs'),
-"typescript": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/typescript.mjs'),
-"ts": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/typescript.mjs'),
-"tsx": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/tsx.mjs'),
-"vue": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/vue.mjs'),
-"css": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/css.mjs'),
-"html": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/html.mjs'),
-"shellscript": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/shellscript.mjs'),
-"bash": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/shellscript.mjs'),
-"sh": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/shellscript.mjs'),
-"shell": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/shellscript.mjs'),
-"zsh": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/shellscript.mjs'),
-"markdown": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/markdown.mjs'),
-"md": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/markdown.mjs'),
-"mdc": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/mdc.mjs'),
-"yaml": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/yaml.mjs'),
-"yml": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/langs/yaml.mjs'),
+"javascript": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/javascript.mjs'),
+"js": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/javascript.mjs'),
+"jsx": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/jsx.mjs'),
+"json": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/json.mjs'),
+"typescript": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/typescript.mjs'),
+"ts": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/typescript.mjs'),
+"tsx": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/tsx.mjs'),
+"vue": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/vue.mjs'),
+"css": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/css.mjs'),
+"html": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/html.mjs'),
+"shellscript": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/shellscript.mjs'),
+"bash": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/shellscript.mjs'),
+"sh": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/shellscript.mjs'),
+"shell": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/shellscript.mjs'),
+"zsh": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/shellscript.mjs'),
+"markdown": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/markdown.mjs'),
+"md": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/markdown.mjs'),
+"mdc": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/mdc.mjs'),
+"yaml": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/yaml.mjs'),
+"yml": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/langs/yaml.mjs'),
 };
 const bundledThemes = {
-"github-dark": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/themes/github-dark.mjs').then(r => r.default),
+"github-dark": () => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/themes/github-dark.mjs').then(r => r.default),
 };
 const options = {};
-const engine = createWasmOnigEngine(() => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/shiki/dist/wasm.mjs'));
+const engine = createWasmOnigEngine(() => import('file://C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/shiki/dist/wasm.mjs'));
 const highlighter = createShikiHighlighter({ bundledLangs, bundledThemes, options, getMdcConfigs, engine });
 
 const mdcHighlighter = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

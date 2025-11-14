@@ -1,28 +1,31 @@
 <template>
   <section class="comments">
+    <hr />
     <h2 class="comments-title">Comentarios</h2>
-    <div ref="commentsEl" />
+
+    <!-- 👇 Aseguramos que solo se renderice en el cliente -->
+    <ClientOnly>
+      <div ref="commentsEl" />
+    </ClientOnly>
   </section>
 </template>
 
-<script setup lang="ts">
-import { ref, onMounted, watch } from 'vue'
+<script setup>
+import { ref, onMounted } from 'vue'
 import { useRoute } from '#app'
 
 const route = useRoute()
-const commentsEl = ref<HTMLElement | null>(null)
+const commentsEl = ref(null)
 
-// 👇 CAMBIA ESTO POR TU REPO
-const REPO = 'usuario/nombre-del-repo' // ej: 'eithel/jazz-catalog'
-
-// Config de Utterances
+// 👇 IMPORTANTE: tu repo público
+const REPO = 'Edgar1120/jazz-catalog-tarea'
 const ISSUE_TERM = 'pathname'
 const THEME = 'github-light'
 
 function loadUtterances() {
   if (!commentsEl.value) return
 
-  // Limpiar comentarios si ya había un iframe (cambio de ruta)
+  // Limpia si ya había un iframe (por cambios de ruta)
   commentsEl.value.innerHTML = ''
 
   const script = document.createElement('script')
@@ -38,16 +41,11 @@ function loadUtterances() {
 }
 
 onMounted(() => {
-  loadUtterances()
-})
-
-// Si cambias de página (otro álbum, artista, etc.), recarga el widget
-watch(
-  () => route.path,
-  () => {
+  // Pequeño delay por si acaso (hidratación)
+  setTimeout(() => {
     loadUtterances()
-  }
-)
+  }, 0)
+})
 </script>
 
 <style scoped>

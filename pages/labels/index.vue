@@ -1,6 +1,7 @@
 <template>
   <section class="labels-page">
     <h1 class="page-title">Discográficas</h1>
+
     <div class="labels-grid">
       <Card
         v-for="lb in labels"
@@ -13,10 +14,15 @@
         <p class="label-meta">Fundada: {{ lb.founded }}</p>
       </Card>
     </div>
+
+    <!-- 👇 Sección de comentarios Utterances -->
+    <UtterancesComments />
   </section>
 </template>
 
 <script setup>
+import UtterancesComments from '~/components/UtterancesComments.vue'
+
 const { data: labels } = await useAsyncData('labels', () => {
   return queryContent('/labels').sort({ name: 1 }).find()
 })
@@ -33,7 +39,7 @@ const { data: labels } = await useAsyncData('labels', () => {
   font-weight: 800;
   margin-bottom: 1.5rem;
   text-align: center;
-  color: #ffffff; /* blanco */
+  color: #ffffff;
 }
 
 .labels-grid {
@@ -46,7 +52,7 @@ const { data: labels } = await useAsyncData('labels', () => {
 .label-meta {
   margin-top: 0.25rem;
   font-size: 0.9rem;
-  color: #000000; /* gris claro */
+  color: #000000;
 }
 
 /* Responsivo */

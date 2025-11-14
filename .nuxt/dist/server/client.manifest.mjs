@@ -1,1 +1,1 @@
-export { default } from "file:///C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-main/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
+export { default } from "file:///C:/Users/ealva/OneDrive/Escritorio/jazz-catalog-tarea/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

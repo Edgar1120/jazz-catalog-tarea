@@ -21,10 +21,15 @@
     <ol class="tracklist">
       <li v-for="(t,i) in album.tracks" :key="i">{{ i+1 }}. {{ t }}</li>
     </ol>
+
+    <!-- 👇 Sección de comentarios -->
+    <UtterancesComments />
   </section>
 </template>
 
 <script setup>
+import UtterancesComments from '~/components/UtterancesComments.vue'
+
 const route = useRoute()
 const slug = route.params.slug
 const { data: album } = await useAsyncData(`album-${slug}`, () =>

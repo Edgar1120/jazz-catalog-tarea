@@ -40,10 +40,15 @@
         <p>Fundada: {{ lb.founded }}</p>
       </Card>
     </div>
+
+    <!-- 👇 Sección de comentarios Utterances -->
+    <UtterancesComments />
   </section>
 </template>
 
 <script setup>
+import UtterancesComments from '~/components/UtterancesComments.vue'
+
 const route = useRoute()
 const slug = route.params.slug
 
@@ -141,7 +146,6 @@ const { data: labels } = await useAsyncData(`artist-labels-${slug}`, async () =>
 .cards-grid :deep(p) {
   color: #000000;
 }
-
 
 /* Responsivo */
 @media (max-width: 720px) {

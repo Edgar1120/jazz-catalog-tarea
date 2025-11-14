@@ -20,15 +20,21 @@
         :subtitle="al.year?.toString()"
         :image="al.cover"
       >
-        <p>🎷 Artista:
+        <p>
+          🎷 Artista:
           <NuxtLink :to="`/artists/${al.artistSlug}`" class="link">{{ al.artist }}</NuxtLink>
         </p>
       </Card>
     </div>
+
+    <!-- 👇 Sección de comentarios Utterances -->
+    <UtterancesComments />
   </section>
 </template>
 
 <script setup>
+import UtterancesComments from '~/components/UtterancesComments.vue'
+
 const route = useRoute()
 const slug = route.params.slug
 
@@ -44,7 +50,7 @@ const { data: albums } = await useAsyncData(`label-albums-${slug}`, () =>
 <style scoped>
 .label-page {
   padding: 1rem;
-  color: #000000; /* texto blanco global */
+  color: #000000; /* texto */
 }
 
 .label-header {
@@ -59,7 +65,7 @@ const { data: albums } = await useAsyncData(`label-albums-${slug}`, () =>
   width: 100%;
   border-radius: 12px;
   object-fit: contain;
-  background: #1f2937; /* fondo oscuro en vez de gris claro */
+  background: #1f2937;
   padding: 1rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
@@ -89,7 +95,7 @@ const { data: albums } = await useAsyncData(`label-albums-${slug}`, () =>
 
 .label-bio :deep(p) {
   margin: 0.25rem 0;
-  color: #f3f4f6; /* gris muy claro */
+  color: #f3f4f6;
   line-height: 1.6;
 }
 
@@ -107,12 +113,13 @@ const { data: albums } = await useAsyncData(`label-albums-${slug}`, () =>
 }
 
 .link {
-  color: #93c5fd; /* azul claro */
+  color: #93c5fd;
   font-weight: 500;
   transition: color 0.2s ease;
 }
+
 .link:hover {
-  color: #bfdbfe; /* azul más brillante */
+  color: #bfdbfe;
   text-decoration: underline;
 }
 

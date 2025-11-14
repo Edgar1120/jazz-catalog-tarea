@@ -1,6 +1,7 @@
 <template>
   <section class="albums-section">
     <h1 class="section-title">Álbumes</h1>
+
     <div class="albums-grid">
       <Card
         v-for="al in albums"
@@ -24,10 +25,15 @@
         </p>
       </Card>
     </div>
+
+    <!-- 👇 Sección de comentarios Utterances -->
+    <UtterancesComments />
   </section>
 </template>
 
 <script setup>
+import UtterancesComments from '~/components/UtterancesComments.vue'
+
 const { data: albums } = await useAsyncData('albums', () => {
   return queryContent('/albums').sort({ year: 1 }).find()
 })
@@ -43,7 +49,7 @@ const { data: albums } = await useAsyncData('albums', () => {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 24px;
-  color: #ffffff; /* blanco */
+  color: #ffffff;
   text-align: center;
 }
 
@@ -56,18 +62,18 @@ const { data: albums } = await useAsyncData('albums', () => {
 
 .info {
   font-size: 0.9rem;
-  color: #000000; /* blanco suave */
+  color: #000000; /* texto */
   margin-top: 4px;
 }
 
 .link {
-  color: #93c5fd; /* azul claro */
+  color: #93c5fd;
   font-weight: 500;
   transition: color 0.2s;
 }
 
 .link:hover {
-  color: #bfdbfe; /* azul más brillante en hover */
+  color: #bfdbfe;
   text-decoration: underline;
 }
 </style>

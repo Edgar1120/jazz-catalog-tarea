@@ -1,11 +1,13 @@
 <template>
   <section class="artists-page">
     <h1 class="page-title">Artistas</h1>
+
     <input
       v-model="q"
       class="search"
       placeholder="Buscar artista, estilo o país..."
     />
+
     <div class="artists-grid">
       <Card
         v-for="a in filtered"
@@ -18,13 +20,18 @@
         <p class="artist-meta">{{ a.country }} • {{ a.years_active }}</p>
       </Card>
     </div>
+
+    <!-- 👇 Sección de comentarios -->
+    <UtterancesComments />
   </section>
 </template>
 
 <script setup>
 import { computed, ref } from 'vue'
+import UtterancesComments from '~/components/UtterancesComments.vue'
 
 const q = ref('')
+
 const { data: artists } = await useAsyncData('artists', () => {
   return queryContent('/artists').sort({ name: 1 }).find()
 })
@@ -87,12 +94,11 @@ const filtered = computed(() => {
 }
 
 .artist-meta {
-  color: #010610; /* gris muy claro */
+  color: #010610;
   font-size: 0.9rem;
   margin-top: 0.25rem;
 }
 
-/* Responsivo */
 @media (max-width: 640px) {
   .page-title {
     font-size: 1.6rem;
