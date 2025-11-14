@@ -1,0 +1,4 @@
+const index_vue_vue_type_style_index_0_scoped_1979f1ae_lang = ".labels-page[data-v-1979f1ae]{color:#fff;padding:1rem}.page-title[data-v-1979f1ae]{color:#fff;font-size:2rem;font-weight:800;margin-bottom:1.5rem;text-align:center}.labels-grid[data-v-1979f1ae]{align-items:stretch;display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.label-meta[data-v-1979f1ae]{color:#000;font-size:.9rem;margin-top:.25rem}@media (max-width:640px){.page-title[data-v-1979f1ae]{font-size:1.6rem}}";
+
+export { index_vue_vue_type_style_index_0_scoped_1979f1ae_lang as i };
+//# sourceMappingURL=index-styles-1.mjs-DtxZ0Wdl.mjs.map

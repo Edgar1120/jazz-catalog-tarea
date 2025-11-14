@@ -1,0 +1,5 @@
+// ROLLUP_NO_REPLACE 
+ const billEvans = "{\"parsed\":{\"_path\":\"/artists/bill-evans\",\"_dir\":\"artists\",\"_draft\":false,\"_partial\":false,\"_locale\":\"\",\"title\":\"Bill Evans\",\"description\":\"Pianista influyente, colaborador de 'Kind of Blue'.\",\"slug\":\"bill-evans\",\"name\":\"Bill Evans\",\"country\":\"Estados Unidos\",\"years_active\":\"1950–1980\",\"styles\":[\"Cool Jazz\",\"Modal\"],\"image\":\"https://i.postimg.cc/6Qtcr4H4/Bill-Evans-1961-publicity-photo-by-Steve-Schapiro.jpg\",\"labelRefs\":[\"riverside\",\"verve\"],\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Pianista influyente, colaborador de 'Kind of Blue'.\"}]}],\"toc\":{\"title\":\"\",\"searchDepth\":2,\"depth\":2,\"links\":[]}},\"_type\":\"markdown\",\"_id\":\"content:artists:bill-evans.md\",\"_source\":\"content\",\"_file\":\"artists/bill-evans.md\",\"_stem\":\"artists/bill-evans\",\"_extension\":\"md\"},\"hash\":\"xf4oRwfaNR\"}";
+
+export { billEvans as default };
+//# sourceMappingURL=bill-evans.mjs.map

@@ -1,0 +1,5 @@
+// ROLLUP_NO_REPLACE 
+ const impulse = "{\"parsed\":{\"_path\":\"/labels/impulse\",\"_dir\":\"labels\",\"_draft\":false,\"_partial\":false,\"_locale\":\"\",\"title\":\"Impulse\",\"description\":\"El \\\"hogar de Coltrane\\\"; innovaciones del jazz de los 60s.\",\"slug\":\"impulse\",\"name\":\"Impulse!\",\"country\":\"Estados Unidos\",\"founded\":1960,\"logo\":\"https://i.postimg.cc/VLBL7v1c/impulse-stereo-label-1024x1024.jpg\",\"website\":\"https://www.impulserecords.com\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"El \\\"hogar de Coltrane\\\"; innovaciones del jazz de los 60s.\"}]}],\"toc\":{\"title\":\"\",\"searchDepth\":2,\"depth\":2,\"links\":[]}},\"_type\":\"markdown\",\"_id\":\"content:labels:impulse.md\",\"_source\":\"content\",\"_file\":\"labels/impulse.md\",\"_stem\":\"labels/impulse\",\"_extension\":\"md\"},\"hash\":\"cCnIKHxOUp\"}";
+
+export { impulse as default };
+//# sourceMappingURL=impulse.mjs.map

@@ -1,0 +1,21 @@
+{
+  "slug": "a-love-supreme",
+  "title": "A Love Supreme",
+  "artist": "John Coltrane",
+  "artistSlug": "john-coltrane",
+  "label": "Impulse!",
+  "labelSlug": "impulse",
+  "year": 1965,
+  "styles": [
+    "Modal",
+    "Spiritual"
+  ],
+  "cover": "https://i.postimg.cc/DzNW2tbf/0501551-JOHN-COLTRAINE.webp",
+  "tracks": [
+    "Acknowledgement",
+    "Resolution",
+    "Pursuance",
+    "Psalm"
+  ],
+  "description": "Suite espiritual y obra maestra de Coltrane."
+}

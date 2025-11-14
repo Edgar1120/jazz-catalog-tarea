@@ -1,0 +1,5 @@
+// ROLLUP_NO_REPLACE 
+ const ninaSimone = "{\"parsed\":{\"_path\":\"/artists/nina-simone\",\"_dir\":\"artists\",\"_draft\":false,\"_partial\":false,\"_locale\":\"\",\"title\":\"Nina Simone\",\"description\":\"Pianista y cantante, activista por los derechos civiles.\",\"slug\":\"nina-simone\",\"name\":\"Nina Simone\",\"country\":\"Estados Unidos\",\"years_active\":\"1954–2002\",\"styles\":[\"Soul Jazz\",\"Vocal Jazz\",\"Blues\"],\"image\":\"https://i.postimg.cc/qvbYvLBM/Nina-Simone-1965-restoration1.jpg\",\"labelRefs\":[\"philips\",\"rca\"],\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Pianista y cantante, activista por los derechos civiles.\"}]}],\"toc\":{\"title\":\"\",\"searchDepth\":2,\"depth\":2,\"links\":[]}},\"_type\":\"markdown\",\"_id\":\"content:artists:nina-simone.md\",\"_source\":\"content\",\"_file\":\"artists/nina-simone.md\",\"_stem\":\"artists/nina-simone\",\"_extension\":\"md\"},\"hash\":\"wmH3rRTCw6\"}";
+
+export { ninaSimone as default };
+//# sourceMappingURL=nina-simone.mjs.map

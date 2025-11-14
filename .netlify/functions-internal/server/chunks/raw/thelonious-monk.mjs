@@ -1,0 +1,5 @@
+// ROLLUP_NO_REPLACE 
+ const theloniousMonk = "{\"parsed\":{\"_path\":\"/artists/thelonious-monk\",\"_dir\":\"artists\",\"_draft\":false,\"_partial\":false,\"_locale\":\"\",\"title\":\"Thelonious Monk\",\"description\":\"Pianista y compositor de estilo único y anguloso.\",\"slug\":\"thelonious-monk\",\"name\":\"Thelonious Monk\",\"country\":\"Estados Unidos\",\"years_active\":\"1940–1975\",\"styles\":[\"Bebop\",\"Hard Bop\"],\"image\":\"https://i.postimg.cc/XJ3wSMMZ/Thelonious-Monk-Minton-s-Playhouse-New-York-N-Y-ca-Sept-1947-William-P-Gottlieb-06191.jpg\",\"labelRefs\":[\"blue-note\",\"columbia\"],\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Pianista y compositor de estilo único y anguloso.\"}]}],\"toc\":{\"title\":\"\",\"searchDepth\":2,\"depth\":2,\"links\":[]}},\"_type\":\"markdown\",\"_id\":\"content:artists:thelonious-monk.md\",\"_source\":\"content\",\"_file\":\"artists/thelonious-monk.md\",\"_stem\":\"artists/thelonious-monk\",\"_extension\":\"md\"},\"hash\":\"jn9UjLgprL\"}";
+
+export { theloniousMonk as default };
+//# sourceMappingURL=thelonious-monk.mjs.map

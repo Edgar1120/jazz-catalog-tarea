@@ -1,0 +1,5 @@
+// ROLLUP_NO_REPLACE 
+ const ellaFitzgerald = "{\"parsed\":{\"_path\":\"/artists/ella-fitzgerald\",\"_dir\":\"artists\",\"_draft\":false,\"_partial\":false,\"_locale\":\"\",\"title\":\"Ella Fitzgerald\",\"description\":\"La 'Primera Dama del Song', famosa por su scat y rango vocal.\",\"slug\":\"ella-fitzgerald\",\"name\":\"Ella Fitzgerald\",\"country\":\"Estados Unidos\",\"years_active\":\"1934–1993\",\"styles\":[\"Swing\",\"Bebop\",\"Vocal Jazz\"],\"image\":\"https://i.postimg.cc/J4RjdCNS/descarga.jpg\",\"labelRefs\":[\"verve\"],\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"La 'Primera Dama del Song', famosa por su scat y rango vocal.\"}]}],\"toc\":{\"title\":\"\",\"searchDepth\":2,\"depth\":2,\"links\":[]}},\"_type\":\"markdown\",\"_id\":\"content:artists:ella-fitzgerald.md\",\"_source\":\"content\",\"_file\":\"artists/ella-fitzgerald.md\",\"_stem\":\"artists/ella-fitzgerald\",\"_extension\":\"md\"},\"hash\":\"7HbJYBA0ry\"}";
+
+export { ellaFitzgerald as default };
+//# sourceMappingURL=ella-fitzgerald.mjs.map

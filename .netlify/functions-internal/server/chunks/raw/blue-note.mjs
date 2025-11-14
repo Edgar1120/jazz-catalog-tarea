@@ -1,0 +1,5 @@
+// ROLLUP_NO_REPLACE 
+ const blueNote = "{\"parsed\":{\"_path\":\"/labels/blue-note\",\"_dir\":\"labels\",\"_draft\":false,\"_partial\":false,\"_locale\":\"\",\"title\":\"Blue Note\",\"description\":\"Legendario sello enfocado en hard bop, post-bop y más.\",\"slug\":\"blue-note\",\"name\":\"Blue Note\",\"country\":\"Estados Unidos\",\"founded\":1939,\"logo\":\"https://i.postimg.cc/bJWsjBFc/L-281-1502640667-4833.jpg\",\"website\":\"https://www.bluenote.com\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Legendario sello enfocado en hard bop, post-bop y más.\"}]}],\"toc\":{\"title\":\"\",\"searchDepth\":2,\"depth\":2,\"links\":[]}},\"_type\":\"markdown\",\"_id\":\"content:labels:blue-note.md\",\"_source\":\"content\",\"_file\":\"labels/blue-note.md\",\"_stem\":\"labels/blue-note\",\"_extension\":\"md\"},\"hash\":\"oJuVDy4NBJ\"}";
+
+export { blueNote as default };
+//# sourceMappingURL=blue-note.mjs.map

@@ -1,0 +1,23 @@
+{
+  "slug": "time-out",
+  "title": "Time Out",
+  "artist": "Dave Brubeck Quartet",
+  "artistSlug": "dave-brubeck-quartet",
+  "label": "Columbia",
+  "labelSlug": "columbia",
+  "year": 1959,
+  "styles": [
+    "Cool Jazz"
+  ],
+  "cover": "https://i.postimg.cc/NF5pyhdN/Time-out-album-cover.jpg",
+  "tracks": [
+    "Blue Rondo \u00e0 la Turk",
+    "Strange Meadow Lark",
+    "Take Five",
+    "Three To Get Ready",
+    "Kathy's Waltz",
+    "Everybody's Jumpin'",
+    "Pick Up Sticks"
+  ],
+  "description": "Exploraci\u00f3n de m\u00e9tricas irregulares; incluye 'Take Five'."
+}

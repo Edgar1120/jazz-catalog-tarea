@@ -1,0 +1,5 @@
+// ROLLUP_NO_REPLACE 
+ const milesDavis = "{\"parsed\":{\"_path\":\"/artists/miles-davis\",\"_dir\":\"artists\",\"_draft\":false,\"_partial\":false,\"_locale\":\"\",\"title\":\"Miles Davis\",\"description\":\"Figura clave del jazz del siglo XX, innovador en múltiples estilos.\",\"slug\":\"miles-davis\",\"name\":\"Miles Davis\",\"country\":\"Estados Unidos\",\"years_active\":\"1944–1991\",\"styles\":[\"Bebop\",\"Cool Jazz\",\"Modal\",\"Jazz Fusion\"],\"image\":\"https://i.postimg.cc/ncvprNNV/Miles-Davis-Three-Deuces-New-York-N-Y-1947.jpg\",\"labelRefs\":[\"columbia\",\"prestige\"],\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Figura clave del jazz del siglo XX, innovador en múltiples estilos.\"}]}],\"toc\":{\"title\":\"\",\"searchDepth\":2,\"depth\":2,\"links\":[]}},\"_type\":\"markdown\",\"_id\":\"content:artists:miles-davis.md\",\"_source\":\"content\",\"_file\":\"artists/miles-davis.md\",\"_stem\":\"artists/miles-davis\",\"_extension\":\"md\"},\"hash\":\"weT3sU6kCs\"}";
+
+export { milesDavis as default };
+//# sourceMappingURL=miles-davis.mjs.map

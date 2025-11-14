@@ -1,0 +1,21 @@
+{
+  "slug": "kind-of-blue",
+  "title": "Kind of Blue",
+  "artist": "Miles Davis",
+  "artistSlug": "miles-davis",
+  "label": "Columbia",
+  "labelSlug": "columbia",
+  "year": 1959,
+  "styles": [
+    "Modal"
+  ],
+  "cover": "https://i.postimg.cc/L43HDc6q/Kind-of-Blue-1959-CL-1355-album-cover.jpg",
+  "tracks": [
+    "So What",
+    "Freddie Freeloader",
+    "Blue in Green",
+    "All Blues",
+    "Flamenco Sketches"
+  ],
+  "description": "\u00c1lbum emblem\u00e1tico del jazz modal."
+}

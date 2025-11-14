@@ -1,0 +1,5 @@
+// ROLLUP_NO_REPLACE 
+ const herbieHancock = "{\"parsed\":{\"_path\":\"/artists/herbie-hancock\",\"_dir\":\"artists\",\"_draft\":false,\"_partial\":false,\"_locale\":\"\",\"title\":\"Herbie Hancock\",\"description\":\"Pianista y pionero de la fusión y la electrónica.\",\"slug\":\"herbie-hancock\",\"name\":\"Herbie Hancock\",\"country\":\"Estados Unidos\",\"years_active\":\"1961–presente\",\"styles\":[\"Post-bop\",\"Fusion\",\"Jazz-Funk\"],\"image\":\"https://i.postimg.cc/HnNH5gdj/Herbie-Hancock-1976.jpg\",\"labelRefs\":[\"blue-note\",\"columbia\"],\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Pianista y pionero de la fusión y la electrónica.\"}]}],\"toc\":{\"title\":\"\",\"searchDepth\":2,\"depth\":2,\"links\":[]}},\"_type\":\"markdown\",\"_id\":\"content:artists:herbie-hancock.md\",\"_source\":\"content\",\"_file\":\"artists/herbie-hancock.md\",\"_stem\":\"artists/herbie-hancock\",\"_extension\":\"md\"},\"hash\":\"KPyf0dibkd\"}";
+
+export { herbieHancock as default };
+//# sourceMappingURL=herbie-hancock.mjs.map

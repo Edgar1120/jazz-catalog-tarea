@@ -1,0 +1,5 @@
+// ROLLUP_NO_REPLACE 
+ const johnColtrane = "{\"parsed\":{\"_path\":\"/artists/john-coltrane\",\"_dir\":\"artists\",\"_draft\":false,\"_partial\":false,\"_locale\":\"\",\"title\":\"John Coltrane\",\"description\":\"Saxofonista y compositor, conocido por su búsqueda espiritual y técnica virtuosa.\",\"slug\":\"john-coltrane\",\"name\":\"John Coltrane\",\"country\":\"Estados Unidos\",\"years_active\":\"1945–1967\",\"styles\":[\"Hard Bop\",\"Modal\",\"Avant-garde\"],\"image\":\"https://i.postimg.cc/N0ttRbq8/images.jpg\",\"labelRefs\":[\"impulse\",\"atlantic\"],\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Saxofonista y compositor, conocido por su búsqueda espiritual y técnica virtuosa.\"}]}],\"toc\":{\"title\":\"\",\"searchDepth\":2,\"depth\":2,\"links\":[]}},\"_type\":\"markdown\",\"_id\":\"content:artists:john-coltrane.md\",\"_source\":\"content\",\"_file\":\"artists/john-coltrane.md\",\"_stem\":\"artists/john-coltrane\",\"_extension\":\"md\"},\"hash\":\"yyrcoL2pdY\"}";
+
+export { johnColtrane as default };
+//# sourceMappingURL=john-coltrane.mjs.map
