@@ -2,18 +2,52 @@
   <div>
     <header class="site-header">
       <NuxtLink to="/" class="brand">🎷 Jazz Catalog</NuxtLink>
+
       <nav class="nav">
         <NuxtLink to="/artists" class="nav-link">Artistas</NuxtLink>
         <NuxtLink to="/albums" class="nav-link">Álbumes</NuxtLink>
         <NuxtLink to="/labels" class="nav-link">Discográficas</NuxtLink>
       </nav>
+
+      <!-- 🛒 Botón del carrito Snipcart -->
+      <button class="cart-btn snipcart-checkout">
+        🛒 Carrito
+        (<span class="snipcart-items-count"></span>)
+        - <span class="snipcart-total-price"></span>
+      </button>
     </header>
 
     <main class="site-main">
       <NuxtPage />
     </main>
+
+    <!-- 🔑 Snipcart se engancha aquí con tu Public API Key -->
+    <div
+      hidden
+      id="snipcart"
+      data-api-key="NjdiZWEzYTktMmYwNC00ZTc0LWI5YWYtNTEwZDA5YThhMDlmNjM4OTg4NzA2NzMxNjEzNjMx"
+    ></div>
   </div>
 </template>
+
+<script setup>
+import { useHead } from '#imports'
+
+useHead({
+  link: [
+    {
+      rel: 'stylesheet',
+      href: 'https://cdn.snipcart.com/themes/v3.3.3/default/snipcart.css'
+    }
+  ],
+  script: [
+    {
+      src: 'https://cdn.snipcart.com/themes/v3.3.3/default/snipcart.js',
+      async: true
+    }
+  ]
+})
+</script>
 
 <style>
 /* ========= Base ========= */
@@ -112,6 +146,30 @@ body {
   background: color-mix(in oklab, var(--primary) 16%, transparent);
   color: var(--primary);
   box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--primary) 55%, transparent);
+}
+
+/* ========= Botón carrito ========= */
+.cart-btn {
+  margin-left: 1rem;
+  background: #22c55e;
+  border: none;
+  color: #0f172a;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  font-size: .9rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+}
+
+.cart-btn:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
 }
 
 /* ========= Main ========= */

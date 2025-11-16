@@ -11,6 +11,11 @@
         :subtitle="al.year?.toString()"
         :image="al.cover"
       >
+        <!-- 💰 Precio visible en el listado -->
+        <p v-if="al.price" class="info price">
+          💰 Precio: <strong>\${{ al.price }}</strong>
+        </p>
+
         <p class="info">
           🎷 Artista:
           <NuxtLink :to="`/artists/${al.artistSlug}`" class="link">
@@ -42,7 +47,7 @@ const { data: albums } = await useAsyncData('albums', () => {
 <style scoped>
 .albums-section {
   padding: 20px 0;
-  color: #ffffff; /* texto blanco por defecto */
+  color: #ffffff;
 }
 
 .section-title {
@@ -62,8 +67,12 @@ const { data: albums } = await useAsyncData('albums', () => {
 
 .info {
   font-size: 0.9rem;
-  color: #000000; /* texto */
+  color: #000000;
   margin-top: 4px;
+}
+
+.info.price {
+  font-weight: 600;
 }
 
 .link {
